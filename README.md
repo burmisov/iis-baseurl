@@ -21,5 +21,6 @@ It works seamlessly wether on dev machine or off IIS virtual path or app.
 
 Changelog
 =========
-* 0.0.2 - Adds _iisBaseUrl_ to res.locals.
+* 0.0.3 - Adds _iisBaseUrl_ to _res.locals_.
+* 0.0.2 - Technical release (do not use).
 * 0.0.1 - Initial release.
