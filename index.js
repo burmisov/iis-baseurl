@@ -38,7 +38,8 @@ module.exports = function () {
 				res.locals.iisBaseUrl = baseUrl;
 				if (baseUrl != "") {
 					// Transform e.g. '/testbaseurl/assets/js/script.js' -> '/assets/js/script.js'
-					req.url = req.url.replace(baseUrl, "");
+					// If url becomes blank, replace it with "/" to avoid routing fails
+					req.url = req.url.replace(baseUrl, "") || "/";
 					req.iisNodeBaseUrl = baseUrl;
 
 					// Patch res.redirect for correct redirection
