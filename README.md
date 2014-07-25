@@ -18,3 +18,8 @@ app.listen(process.env.PORT || 3000);
 ```
 
 It works seamlessly wether on dev machine or off IIS virtual path or app.
+
+Changelog
+=========
+0.0.2 - Adds _iisBaseUrls_ to res.locals
+0.0.1 - Initial release

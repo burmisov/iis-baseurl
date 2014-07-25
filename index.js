@@ -35,6 +35,7 @@ module.exports = function () {
 			if (rootPos > -1) {
 				// Transform e.g. '/LM/W3SVC/1/ROOT/testbaseurl' -> '/testbaseurl'
 				var baseUrl = appMdPath.slice(appMdPath.search("/ROOT") + ("/ROOT").length);
+				res.locals.iisBaseUrl = baseUrl;
 				if (baseUrl != "") {
 					// Transform e.g. '/testbaseurl/assets/js/script.js' -> '/assets/js/script.js'
 					req.url = req.url.replace(baseUrl, "");
