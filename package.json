@@ -1,6 +1,6 @@
 {
   "name": "iis-baseurl",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Cut off IIS virtual path (base url) from the request url when running via IISNODE with URL Rewrite",
   "main": "index.js",
   "scripts": {
