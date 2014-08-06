@@ -21,6 +21,7 @@ It works seamlessly wether on dev machine or off IIS virtual path or app.
 
 Changelog
 =========
+* 0.0.6 - Also lowercase incoming URL's.
 * 0.0.5 - Do lowercase on URL's from IIS to support multi-case base urls.
 * 0.0.4 - Correct empty result urls to become "/".
 * 0.0.3 - Adds _iisBaseUrl_ to _res.locals_.
